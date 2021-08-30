@@ -13,5 +13,7 @@
 
   .hero--msg span:last-child {
     display: inline;
+
+    /* margin-left: 5px; */
   }
 }

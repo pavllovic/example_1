@@ -85,6 +85,11 @@ body {
   margin-top: 0;
 }
 
+.paragraph-md span + span,
+.paragraph-lg span + span {
+  margin-left: 5px;
+}
+
 /* -------------------------------- */
 
 /* box */
