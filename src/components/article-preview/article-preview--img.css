@@ -1,0 +1,16 @@
+.article-preview--img {
+  display: block;
+  width: 100%;
+  max-width: 51.6rem;
+}
+
+.article-preview--img img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 31px 0 hsl(0, 0%, 0%, 15%);
+  object-fit: cover;
+
+  /* opacity: 0.2; */
+}

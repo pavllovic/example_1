@@ -1,0 +1,5 @@
+.logo--msg {
+  display: none;
+  font-size: var(--text-fluid-sm);
+  line-height: calc(28 / 18);
+}

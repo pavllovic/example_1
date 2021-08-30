@@ -1,0 +1,15 @@
+@import './progress-bar--view.css';
+@import './progress-bar--label.css';
+
+.progress-bar {
+  display: flex;
+  width: 100%;
+  max-width: 76rem;
+  height: calc(var(--bl) / 2);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: hsl(216, 26%, 96%, 100%);
+  border-radius: calc(var(--bl) / 4);
+}

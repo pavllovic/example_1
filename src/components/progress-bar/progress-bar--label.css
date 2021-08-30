@@ -1,0 +1,14 @@
+.progress-bar--label {
+  display: block;
+  margin-top: calc(var(--bl) - var(--bl) * 0.8);
+  font-size: var(--text-sm);
+  line-height: calc(var(--bl) * 0.8);
+}
+
+.progress-bar--label:first-of-type {
+  margin-right: 10px;
+}
+
+.progress-bar--label:last-of-type {
+  font-weight: 700;
+}

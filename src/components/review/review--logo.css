@@ -1,0 +1,10 @@
+.review--logo {
+  display: block;
+  max-width: 15rem;
+}
+
+.review--logo svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}

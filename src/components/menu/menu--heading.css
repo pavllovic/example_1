@@ -1,0 +1,12 @@
+.menu--heading {
+  display: none;
+  padding: 2rem 0;
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.2);
+  color: var(--color-text-black);
+
+  /* padding-right: 3rem; */
+  font-family: var(--font-main-bold);
+  font-size: var(--text-fluid-sm);
+  line-height: calc(var(--bl) / 1.5);
+  text-transform: capitalize;
+}

@@ -1,0 +1,7 @@
+.offer--msg {
+  margin-top: var(--bl);
+  margin-bottom: var(--bl);
+  font-size: var(--text-fluid-md);
+  font-weight: 450;
+  line-height: calc(30 / 19);
+}

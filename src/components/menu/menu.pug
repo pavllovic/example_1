@@ -1,0 +1,5 @@
+mixin menu(arr, id)
+  ul(class='menu' id=id)
+    each item in arr
+      li(class='menu--item')
+        a(href='#' class='menu--link') #{item}

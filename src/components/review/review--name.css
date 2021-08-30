@@ -1,0 +1,6 @@
+.review--name {
+  display: block;
+  color: var(--color-text-black);
+  font-size: var(--text-fluid-md);
+  line-height: calc(var(--bl) / 1.5);
+}

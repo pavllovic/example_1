@@ -1,0 +1,20 @@
+:root {
+  /* project colors */
+  --color-main: hsl(194, 100%, 47%);
+  --color-accent: hsl(50, 98%, 48%);
+  --color-secondary: hsl(216, 67%, 20%);
+
+  /* text colors */
+  --color-text: hsl(209, 13%, 15%);
+  --color-text-black: hsl(209, 13%, 15%);
+  --color-text-light: hsl(0, 0%, 100%);
+  --color-text-gray: hsl(0, 0%, 36%);
+
+  /* shades colors */
+  --black: hsl(0, 0%, 0%, 1);
+  --white: hsl(0, 0%, 100%, 1);
+
+  /* bg color */
+  --bg-light: hsl(0, 0%, 100%);
+  --bg-dark: hsl(216, 35%, 15%);
+}

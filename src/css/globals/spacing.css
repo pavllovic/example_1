@@ -1,0 +1,11 @@
+:root {
+  /* static spaces */
+  --space-h-md: 1.5rem;
+}
+
+@media (min-width: 20em) {
+  :root {
+    /* static spaces */
+    --space-h-md: 3rem;
+  }
+}

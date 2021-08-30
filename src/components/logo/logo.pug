@@ -1,0 +1,11 @@
+div(class='logo')
+  a(href='#' class='logo--link')
+    picture
+      source(srcset=`${require('Images/logo/logo-169w.webp').default} 169w,
+                    ${require('Images/logo/logo-254w.webp').default} 254w`
+            sizes='169px' type='image/webp')
+      source(srcset=`${require('Images/logo/logo-169w.png').default} 169w,
+                    ${require('Images/logo/logo-254w.png').default} 254w`
+            sizes='169px' type='image/png')
+      img(class='logo--img' src=require('Images/logo/logo-169w.png').default width='169' height='32' alt='logo')
+  p(class='logo--msg') Just type what's on your mind

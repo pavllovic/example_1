@@ -1,0 +1,29 @@
+@import './footer--menu.css';
+@import './footer--menu-item.css';
+@import './footer--menu-link.css';
+@import './footer--logo.css';
+
+.footer-wrap {
+  width: 100%;
+  padding: 0 var(--space-h-md);
+  background-color: var(--bg-light);
+}
+
+.footer {
+  display: flex;
+  max-width: 112rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: calc(var(--bl) * 7 / 3);
+  padding-bottom: calc(var(--bl) * 2);
+  margin: 0 auto;
+}
+
+@media (min-width: 60em) {
+  .footer {
+    height: calc(var(--bl) * 7);
+    flex-direction: row;
+    padding: 0;
+  }
+}

@@ -1,0 +1,30 @@
+:root {
+  --font-main: 'CircularStd', sans-serif;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'CircularStd';
+  font-weight: 900;
+  src:
+    url('Fonts/CircularStd-Black.woff2') format('woff2'),
+    url('Fonts/CircularStd-Black.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'CircularStd';
+  font-weight: 700;
+  src:
+    url('Fonts/CircularStd-Bold.woff2') format('woff2'),
+    url('Fonts/CircularStd-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'CircularStd';
+  font-weight: 450;
+  src:
+    url('Fonts/CircularStd-Book.woff2') format('woff2'),
+    url('Fonts/CircularStd-Book.woff') format('woff');
+}

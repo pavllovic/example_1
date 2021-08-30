@@ -1,0 +1,14 @@
+.progress-bar--view {
+  width: 100%;
+  height: calc(var(--bl) / 2);
+  background-color: hsl(216, 26%, 96%, 100%);
+  border-radius: calc(var(--bl) / 4);
+}
+
+.progress-bar--view span {
+  display: block;
+  width: calc(var(--progress-bar-value) * 1%);
+  height: calc(var(--bl) / 2);
+  background-color: var(--color-main);
+  border-radius: calc(var(--bl) / 4);
+}

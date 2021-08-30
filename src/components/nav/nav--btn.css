@@ -1,0 +1,137 @@
+.nav--btn {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  overflow: hidden;
+  width: 4rem;
+  height: 4rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem 0.6rem;
+  border: none;
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transform: translateX(0.6rem);
+  transition-property: transform;
+}
+
+/* animated background  */
+.nav--btn::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  /* background:hsla(173, 100%, 44%, 0.2); */
+  background-color: hsla(0, 0%, 0%, 0.07);
+  content: '';
+  transition-property: transform;
+}
+
+.nav--btn[aria-expanded='false'] {
+  transition-delay: 0.25s;
+  transition-duration: 0.15s;
+}
+
+.nav--btn[aria-expanded='true'] {
+  background-size: 100%;
+  transform: translateX(-2rem);
+  transition-delay: 0.25s;
+  transition-duration: 0.15s;
+}
+
+.nav--btn[aria-expanded='false']::before {
+  transform: scale(0, 0);
+  transition-duration: 0.1s;
+}
+
+.nav--btn[aria-expanded='true']::before {
+  transform: scale(1, 1);
+  transition-delay: 0.25s;
+  transition-duration: 0.25s;
+}
+
+/* ---------------------------------------------------- */
+
+
+
+/* .svg-line it svg <path> for humburger */
+.nav--btn .svg-line {
+  stroke: var(--color-text-black);
+  stroke-width: 2;
+  transform-origin: 100% 100%;
+  transition-duration: 0.25s, 0.25s;
+  transition-property: transform, transform-origin;
+}
+
+.nav--btn:hover .svg-line {
+  transform-origin: 50% 50%;
+}
+
+.nav--btn[aria-expanded='false'] .svg-line:nth-child(1) {
+  transform: scaleX(1);
+}
+
+.nav--btn[aria-expanded='false'] .svg-line:nth-child(2) {
+  transform: scaleX(0.7);
+}
+
+.nav--btn[aria-expanded='false'] .svg-line:nth-child(3) {
+  transform: scaleX(0.35);
+}
+
+.nav--btn[aria-expanded='true'] .svg-line:nth-child(1) {
+  transform: scaleX(0);
+}
+
+.nav--btn[aria-expanded='true'] .svg-line:nth-child(2) {
+  transform: scaleX(0);
+}
+
+.nav--btn[aria-expanded='true'] .svg-line:nth-child(3) {
+  /* if set 0 animation will be discrete(don't now why) */
+  transform: scaleX(0.00001);
+}
+
+.nav--btn[aria-expanded='false']:hover .svg-line:nth-child(1) {
+  transform: scaleX(0.35);
+}
+
+/* ---------------------------------------------------- */
+
+
+/* .svg-cross it svg <path> for close cross */
+.nav--btn .svg-cross {
+  stroke: var(--color-text-black);
+  stroke-width: 2;
+  transform-origin: center;
+  transition-duration: 0.25s;
+  transition-property: transform;
+}
+
+.nav--btn[aria-expanded='false'] .svg-cross {
+  transition-delay: 0;
+}
+
+.nav--btn[aria-expanded='true'] .svg-cross {
+  transition-delay: 0.25s;
+}
+
+.nav--btn[aria-expanded='false'] .svg-cross:nth-child(1) {
+  transform: rotate(45deg) scaleX(0);
+}
+
+.nav--btn[aria-expanded='false'] .svg-cross:nth-child(2) {
+  transform: rotate(-45deg) scaleX(0);
+}
+
+.nav--btn[aria-expanded='true'] .svg-cross:nth-child(1) {
+  transform: rotate(45deg) scaleX(1);
+}
+
+.nav--btn[aria-expanded='true'] .svg-cross:nth-child(2) {
+  transform: rotate(-45deg) scaleX(1);
+}
+
+/* ---------------------------------------------------- */

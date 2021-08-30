@@ -1,0 +1,12 @@
+.review--person picture {
+  width: calc(var(--bl) / 0.6);
+  height: calc(var(--bl) / 0.6);
+  margin: 0 20px;
+}
+
+.review--photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}

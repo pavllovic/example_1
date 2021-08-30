@@ -1,0 +1,14 @@
+@import './offer--msg.css';
+@import './offer--header.css';
+@import './offer--price.css';
+@import './offer--value.css';
+@import './offer--measure.css';
+@import './offer--btn.css';
+
+.offer {
+  display: flex;
+  max-width: 22.1rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}

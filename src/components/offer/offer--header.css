@@ -1,0 +1,7 @@
+.offer--header {
+  margin-bottom: calc(var(--bl) / 1.5);
+  font-size: var(--text-fluid-lg);
+  font-weight: 450;
+  line-height: calc(30 / 19);
+  text-transform: uppercase;
+}

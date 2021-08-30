@@ -1,0 +1,51 @@
+.nav .menu {
+  position: absolute;
+  top: -2rem;
+  right: 0;
+  display: flex;
+  overflow: hidden;
+  min-width: calc(21rem - var(--space-h-md) * 2);
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-right: 8.5rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  background-color: var(--white);
+  border-radius: 15px;
+  box-shadow: 0 0 5px 0 hsla(0, 0%, 0%, 0.2);
+  text-align: left;
+  transition-duration: 0.3s, 0s;
+  transition-property: clip-path, visibility;
+}
+
+.nav [aria-expanded='true'] ~ .menu {
+  clip-path: circle(150% at 100% 0%);
+  transition-delay: 0, 0;
+  transition-property: clip-path, visibility;
+  visibility: visible;
+}
+
+.nav [aria-expanded='false'] ~ .menu {
+  clip-path: circle(25px at calc(100% - 2.5rem) 3.4rem);
+  transition-delay: 0.15s, 0.45s;
+  visibility: hidden;
+}
+
+@media (min-width: 60em) {
+  .nav .menu {
+    position: static;
+    display: flex;
+    overflow: visible;
+    min-width: auto;
+    flex-direction: row;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    text-align: center;
+  }
+
+  .nav [aria-expanded] ~ .menu {
+    clip-path: none;
+    visibility: visible;
+  }
+}

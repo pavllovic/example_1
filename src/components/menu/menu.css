@@ -1,0 +1,13 @@
+@import './menu--item.css';
+@import './menu--link.css';
+@import './menu--heading.css';
+
+.menu {
+  display: flex;
+  color: var(--color-text-black);
+  cursor: pointer;
+  font-size: var(--text-fluid-sm);
+
+  /* line-height: calc(var(--bl) / 1.5); */
+  line-height: 2rem;
+}

@@ -1,0 +1,36 @@
+.btn {
+  padding: calc(0.89em - 2px) calc(2.56em - 2px);
+  border: 2px solid var(--color-main);
+  background-color: var(--bg-light);
+  border-radius: 8.5rem;
+  box-shadow: 0 0 5px 0 hsla(0, 0%, 0%, 0), 0 0 10px 0 hsla(0, 0%, 0%, 0);
+  color: var(--color-main);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: var(--text-fluid-sm);
+  font-weight: 700;
+  line-height: 2rem;
+  transition-duration: 0.25s, 0.15s, 0.15s;
+  transition-property: box-shadow, color, background-color;
+  transition-timing-function: ease-out;
+}
+
+.btn.btn-fill {
+  background-color: var(--color-main);
+  color: var(--color-text-light);
+}
+
+.btn:active {
+  background-color: var(--color-main);
+  color: var(--color-text-light);
+}
+
+.btn.btn-fill:active {
+  background-color: var(--color-text-light);
+  color: var(--color-main);
+}
+
+.btn:hover,
+.btn:focus:hover {
+  box-shadow: 0 0 5px 0 hsla(0, 0%, 0%, 0.2), 0 0 8px 0 hsla(194, 100%, 47%, 0.3);
+}

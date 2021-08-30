@@ -1,0 +1,11 @@
+<svg width="28" height="16" viewBox="0 0 28 16" fill="none" focusable='false' xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <path class='svg-line' d='M 0,1 L 28,1z'/>
+    <path class='svg-line' d='M 0,8 L 28,8z'/>
+    <path class='svg-line' d='M 0,15 L 28,15z'/>
+  </g>
+  <g>
+    <path class='svg-cross' d='M 6,8 L 22,8z'/>
+    <path class='svg-cross' d='M 6,8 L 22,8z'/>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+mixin article-preview(title, text, alt_img, num)
+  article(class='article-preview')
+    picture(class='article-preview--img')
+      source(srcset=`${require(`Images/article/${num}/preview/preview-388w.webp`).default} 388w,
+                   ${require(`Images/article/${num}/preview/preview-516w.webp`).default} 516w,
+                   ${require(`Images/article/${num}/preview/preview-774w.webp`).default} 774w,
+                   ${require(`Images/article/${num}/preview/preview-1032w.webp`).default} 1032w`
+          sizes='(min-width: 1180px) 1120px, (min-width: 20em) calc(110vw - 6rem), calc(110vw - 3rem)'
+          type='image/webp')
+      source(srcset=`${require(`Images/article/${num}/preview/preview-388w.jpg`).default} 388w,
+                   ${require(`Images/article/${num}/preview/preview-516w.jpg`).default} 516w,
+                   ${require(`Images/article/${num}/preview/preview-774w.jpg`).default} 774w,
+                   ${require(`Images/article/${num}/preview/preview-1032w.jpg`).default} 1032w`
+            sizes='(min-width: 61em) 516px, (min-width: 29em) calc(100vw - min(16%, 80px)), (min-width: 20em) calc(110vw - 6rem), calc(100vw - 3rem)'
+            type='image/jpg')
+      img(src=require(`Images/article/${num}/preview/preview-516w.jpg`).default width='516' height='350' alt=`${alt_img}`)
+    div(class='article-preview--txt')
+      h3(class='title') #{title}
+      p(class='article-preview--msg paragraph-lg') #{text}
+      a(href='#' class='article-preview--link') LEARN MORE

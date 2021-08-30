@@ -1,0 +1,6 @@
+.offer--value {
+  color: var(--color-accent);
+  font-size: var(--text-heading);
+  font-weight: 900;
+  line-height: calc(78 / 72);
+}

@@ -1,0 +1,10 @@
+.menu--link {
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-decoration: none;
+  text-transform: capitalize;
+}

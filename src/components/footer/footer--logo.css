@@ -1,0 +1,13 @@
+.footer .logo {
+  align-items: center;
+}
+
+@media (min-width: 60em) {
+  .footer .logo {
+    align-items: flex-start;
+  }
+}
+
+.footer .logo--msg {
+  display: block;
+}

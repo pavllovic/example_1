@@ -1,0 +1,6 @@
+.review--post {
+  display: block;
+  font-size: var(--text-fluid-md);
+  letter-spacing: 0.01rem;
+  line-height: var(--bl);
+}

@@ -1,0 +1,12 @@
+.footer .menu {
+  flex-direction: column;
+  margin-top: calc(var(--bl) * 5 / 3);
+  margin-bottom: calc(var(--bl) * 11 / 3);
+}
+
+@media (min-width: 60em) {
+  .footer .menu {
+    flex-direction: row;
+    margin: 0;
+  }
+}

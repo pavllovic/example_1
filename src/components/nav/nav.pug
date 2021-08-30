@@ -1,0 +1,7 @@
+include ../menu/menu.pug
+- let navMenu = ['home', 'product', 'about', 'contact']
+
+nav(class='nav' aria-label='main navigation')
+  button(class='nav--btn' aria-haspopup='true' aria-expanded='false' aria-controls='menu')
+    include ./svg/menu.svg
+  +menu(navMenu, 'menu')

@@ -1,0 +1,13 @@
+.footer .menu--item {
+  margin-bottom: calc(var(--bl) / 3);
+}
+
+.footer .menu--item:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 60em) {
+  .footer .menu--item {
+    margin-bottom: 0;
+  }
+}

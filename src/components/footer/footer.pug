@@ -1,0 +1,8 @@
+include ../menu/menu.pug
+- let footerMenu = ['home', 'product', 'about', 'contact']
+
+div(class='footer-wrap')
+  footer(class='footer') 
+    include ../logo/logo.pug
+    +menu(footerMenu)
+    include ../social-link/social-link.pug

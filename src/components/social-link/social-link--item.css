@@ -1,0 +1,15 @@
+.social-link--item {
+  width: 4rem;
+  height: 4rem;
+
+  /* padding: calc(var(--base-line) / 6) 5px; */
+  margin: 0 20px;
+}
+
+.social-link--item:last-child {
+  margin-right: 0;
+}
+
+.social-link--item:first-child {
+  margin-left: 0;
+}

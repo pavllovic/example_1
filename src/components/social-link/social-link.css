@@ -1,0 +1,9 @@
+@import './social-link--item.css';
+@import './social-link--link.css';
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  margin: calc(var(--base-line) / 6) calc((var(--space-h-sm) + 5px) * -1);
+  cursor: pointer;
+}

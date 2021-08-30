@@ -1,0 +1,24 @@
+section(class='hero')
+  h1(class='hero--header heading') Lightning fast prototyping
+  p(class='hero--msg paragraph-lg') 
+    <span>Most calendars are designed for teams.</span> 
+    <span>Slate is designed for freelancers.</span>
+  div(class='btn-group')
+    button(class='btn btn-fill') Get Started
+    button(class='btn') Try For Free
+  picture
+    source(srcset=`${require('Images/hero/laptop-560w.webp').default} 560w,
+                   ${require('Images/hero/laptop-840w.webp').default} 840w,
+                   ${require('Images/hero/laptop-1120w.webp').default} 1120w,
+                   ${require('Images/hero/laptop-1680w.webp').default} 1680w,
+                   ${require('Images/hero/laptop-2240w.webp').default} 2240w`
+          sizes='(min-width: 73em) 1120px, (min-width: 20em) calc(110vw - 6rem), calc(110vw - 3rem)'
+          type='image/webp')
+    source(srcset=`${require('Images/hero/laptop-560w.jpg').default} 560w,
+                   ${require('Images/hero/laptop-840w.jpg').default} 840w,
+                   ${require('Images/hero/laptop-1120w.jpg').default} 1120w,
+                   ${require('Images/hero/laptop-1680w.jpg').default} 1680w,
+                   ${require('Images/hero/laptop-2240w.jpg').default} 2240w`
+          sizes='(min-width: 980px) 1120px, (min-width: 20em) calc(110vw - 6rem), calc(100vw - 3rem)'
+          type='image/jpg')
+    img(class='hero--img' src=require('Images/hero/laptop-1120w.jpg').default width='1120' height='803' alt='alt text')

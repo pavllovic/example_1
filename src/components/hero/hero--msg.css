@@ -1,0 +1,17 @@
+.hero--msg {
+  max-width: 32rem;
+}
+
+.hero--msg span:last-child {
+  display: none;
+}
+
+@media (min-width: 60em) {
+  .hero--msg {
+    max-width: 52.5rem;
+  }
+
+  .hero--msg span:last-child {
+    display: inline;
+  }
+}

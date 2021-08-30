@@ -1,0 +1,19 @@
+article(class='review')
+  div(class='review--logo')
+    include ../../images/review/1/logo.svg
+  p(class='review--msg paragraph-md') 
+    <span>Being a freelancer is a rollercoaster of emotions. </span>
+    <span>We built Slate to keep your freelance business less stressful. </span>
+    <span>We'd love to show you what we're building.</span>
+  div(class='review--person')
+    picture
+      source(srcset=`${require('Images/review/1/ava-50w.webp').default} 50w,
+                    ${require('Images/review/1/ava-100w.webp').default} 100w`
+            sizes='5rem' type='image/webp')
+      source(srcset=`${require('Images/review/1/ava-50w.png').default} 50w,
+                    ${require('Images/review/1/ava-100w.png').default} 100w`
+            sizes='5rem' type='image/jpg')
+      img(class='review--photo' src=require('Images/review/1/ava-50w.png').default width='50' height='50' alt='alt text')
+    div
+      span(class='review--name') Esther Webb
+      span(class='review--post') Designer

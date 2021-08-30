@@ -1,0 +1,20 @@
+@import './nav--btn.css';
+@import './nav--menu.css';
+@import './nav--menu-item.css';
+@import './nav--menu-link.css';
+
+.nav {
+  position: relative;
+  order: 1;
+}
+
+@media (min-width: 60em) {
+  .nav {
+    order: 0;
+    padding: 0;
+  }
+
+  .nav .nav--btn {
+    display: none;
+  }
+}

@@ -1,0 +1,9 @@
+.menu--item {
+  /* padding: 10px; */
+}
+
+@media (min-width: 60em) {
+  .menu--item {
+    margin: 0 15px;
+  }
+}

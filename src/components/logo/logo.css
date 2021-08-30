@@ -1,0 +1,9 @@
+@import './logo--img.css';
+@import './logo--link.css';
+@import './logo--msg.css';
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
