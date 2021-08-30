@@ -26,11 +26,12 @@ block content
     include ../components/hero/hero.pug
     section(class='box box-promo')
       h2(class='subheading') Fastest way to navigate
-      p(class='paragraph-lg') <span>Most calendars are designed for teams.</span><span>Slate is designed for freelancers.</span>
+      p(class='paragraph-lg') 
+        span Most calendars are designed for teams. 
+        span Slate is designed for freelancers.
       div(class='btn-group')
-        button(class='btn btn-fill') Download
-        button(class='btn') See Walkthrough
-    //- section(class='box box-article-preview')
+        button(class='btn btn-fill' type='button') Download
+        button(class='btn' type='button') See Walkthrough
     include ../components/article-preview/article-preview.pug
     +article-preview(
       'OpenType features', 
@@ -49,7 +50,7 @@ block content
   section(class='box box-review')
     h2(class='title') Testimonials
     include ../components/review/review.pug
-    button(class='btn btn-fill') All Testimonials
+    button(class='btn btn-fill' type='button') All Testimonials
   section(class='box box-price')
     div(class='box-column')
       div(class='box-column--col')
@@ -63,5 +64,5 @@ block content
       div(class='box-column--col')
         p(class='paragraph-md') Being a freelancer is a rollercoaster of emotions. We built Slate to keep your freelance business building. 
         p(class='paragraph-md') Being a freelancer is a rollercoaster of emotions. We built Slate to keep your freelance business building.
-        button(class='btn btn-fill') Get Started
+        button(class='btn btn-fill' type='button') Get Started
   include ../components/footer/footer.pug

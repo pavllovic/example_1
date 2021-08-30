@@ -8,6 +8,10 @@
   }
 }
 
+.footer .logo--link {
+  width: auto;
+}
+
 .footer .logo--msg {
   display: block;
 }

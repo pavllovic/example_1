@@ -3,5 +3,6 @@ include ../menu/menu.pug
 
 nav(class='nav' aria-label='main navigation')
   button(class='nav--btn' aria-haspopup='true' aria-expanded='false' aria-controls='menu')
+    span(class='visually-hidden') menu
     include ./svg/menu.svg
   +menu(navMenu, 'menu')
