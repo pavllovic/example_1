@@ -11,7 +11,7 @@ mixin article-preview(title, text, alt_img, num)
                    ${require(`Images/article/${num}/preview/preview-516w.jpg`).default} 516w,
                    ${require(`Images/article/${num}/preview/preview-774w.jpg`).default} 774w,
                    ${require(`Images/article/${num}/preview/preview-1032w.jpg`).default} 1032w`
-            sizes='(min-width: 61em) 516px, (min-width: 29em) calc(100vw - (min(16%, 80px))), (min-width: 20em) calc(110vw - 6rem), calc(100vw - 3rem)'
+            sizes=`(min-width: 61em) 516px, (min-width: 29em) calc(100vw - min(16%, 80px)), (min-width: 20em) calc(110vw - 6rem), calc(100vw - 3rem)`
             type='image/jpg')
       img(src=require(`Images/article/${num}/preview/preview-516w.jpg`).default width='516' height='350' alt=`${alt_img}`)
     div(class='article-preview--txt')
