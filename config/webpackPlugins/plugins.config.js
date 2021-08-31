@@ -17,6 +17,7 @@ const compressionPlugin = new CompressionPlugin({
 });
 
 const scriptExtHtmlWebpackPlugin = new ScriptExtHtmlWebpackPlugin({
+  defer: [/legacy[\\/].*\.js$/],
   custom: [
     {
       test: /legacy[\\/].*\.js$/,
@@ -45,7 +46,7 @@ const htmlWebpackPlagin = new HtmlWebpackPlagin({
   template: './src/template/index.pug',
   chunks: ['index'],
   inject: 'body',
-  scriptLoading: 'defer',
+  // scriptLoading: 'defer',
   minify: {
     collapseWhitespace: !isDev,
     collapseInlineTagWhitespace: !isDev,
