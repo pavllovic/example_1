@@ -2,21 +2,21 @@ extends ./layout/base.pug
 
 block preload
   link(rel='preload' href=require('Images/hero/laptop-560w.webp').default as='image' 
-      media=`(max-width: 597px) and (-webkit-max-device-pixel-ratio: 1.1), 
-             (max-width: 399px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-max-device-pixel-ratio: 2.5)`)
+      media='(max-width: 597px) and (-webkit-max-device-pixel-ratio: 1.1),' +
+            '(max-width: 399px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-max-device-pixel-ratio: 2.5)')
   link(rel='preload' href=require('Images/hero/laptop-840w.webp').default as='image' 
-      media=`(min-width: 598px) and (max-width: 851px) and (-webkit-max-device-pixel-ratio: 1.1), 
-             (min-width: 400px) and (max-width: 528px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-max-device-pixel-ratio: 2.5),
-             (max-width: 381px) and (-webkit-min-device-pixel-ratio: 3)`)
+      media='(min-width: 598px) and (max-width: 851px) and (-webkit-max-device-pixel-ratio: 1.1),' +
+            '(min-width: 400px) and (max-width: 528px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-max-device-pixel-ratio: 2.5),' +
+            '(max-width: 381px) and (-webkit-min-device-pixel-ratio: 3)')
   link(rel='preload' href=require('Images/hero/laptop-1120w.webp').default as='image' 
-      media=`(min-width: 852px) and (-webkit-max-device-pixel-ratio: 1.1), 
-             (min-width: 529px) and (max-width: 710px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-max-device-pixel-ratio: 2.5),
-             (min-width: 382px) and (max-width: 502px) and (-webkit-min-device-pixel-ratio: 3)`)
+      media='(min-width: 852px) and (-webkit-max-device-pixel-ratio: 1.1),' + 
+            '(min-width: 529px) and (max-width: 710px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-max-device-pixel-ratio: 2.5),' +
+            '(min-width: 382px) and (max-width: 502px) and (-webkit-min-device-pixel-ratio: 3)')
   link(rel='preload' href=require('Images/hero/laptop-1680w.webp').default as='image' 
-      media=`(min-width: 711px) and (max-width: 969px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-max-device-pixel-ratio: 2.5),
-                 (min-width: 503px) and (max-width: 675px) and (-webkit-min-device-pixel-ratio: 3)`)
+      media='(min-width: 711px) and (max-width: 969px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-max-device-pixel-ratio: 2.5),' +
+            '(min-width: 503px) and (max-width: 675px) and (-webkit-min-device-pixel-ratio: 3)')
   link(rel='preload' href=require('Images/hero/laptop-2240w.webp').default as='image' 
-      media=`(min-width: 970px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 676px) and (-webkit-min-device-pixel-ratio: 3)`)
+      media='(min-width: 970px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 676px) and (-webkit-min-device-pixel-ratio: 3)')
   link(rel='preload' href=require('Fonts/CircularStd-Black.woff2').default as='font' type='font/woff2' crossorigin='anonymous')
   link(rel='preload' href=require('Fonts/CircularStd-Bold.woff2').default as='font' type='font/woff2' crossorigin='anonymous')
 
@@ -43,26 +43,26 @@ block content
       'Most calendars are designed for teams. Slate is designed for freelancers.',
       'alt text img', 
       '2')
-  section(class='box box-schedule')
-    h2(class='subheading') A rethink of how we work
-    p(class='paragraph-md') Being a freelancer is a rollercoaster of emotions. We built Slate to keep your freelance business less stressful.
-    include ../components/progress-bar/progress-bar.pug
-  section(class='box box-review')
-    h2(class='title') Testimonials
-    include ../components/review/review.pug
-    button(class='btn btn-fill' type='button') All Testimonials
-  section(class='box box-price')
-    div(class='box-column')
-      div(class='box-column--col')
-        h2(class='subheading') Pricing
-        p(class='paragraph-md') Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.
-      div(class='box-column--col')
-        include ../components/offer/offer.pug
-  section(class='box box-focus')
-    div(class='box-column')
-      h3(class='box-column--col title') We focus on ergonomic meeting
-      div(class='box-column--col')
-        p(class='paragraph-md') Being a freelancer is a rollercoaster of emotions. We built Slate to keep your freelance business building. 
-        p(class='paragraph-md') Being a freelancer is a rollercoaster of emotions. We built Slate to keep your freelance business building.
-        button(class='btn btn-fill' type='button') Get Started
+    section(class='box box-schedule')
+      h2(class='subheading') A rethink of how we work
+      p(class='paragraph-md') Being a freelancer is a rollercoaster of emotions. We built Slate to keep your freelance business less stressful.
+      include ../components/progress-bar/progress-bar.pug
+    section(class='box box-review')
+      h2(class='title') Testimonials
+      include ../components/review/review.pug
+      button(class='btn btn-fill' type='button') All Testimonials
+    section(class='box box-price')
+      div(class='box-column')
+        div(class='box-column--col')
+          h2(class='subheading') Pricing
+          p(class='paragraph-md') Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.
+        div(class='box-column--col')
+          include ../components/offer/offer.pug
+    section(class='box box-focus')
+      div(class='box-column')
+        h3(class='box-column--col title') We focus on ergonomic meeting
+        div(class='box-column--col')
+          p(class='paragraph-md') Being a freelancer is a rollercoaster of emotions. We built Slate to keep your freelance business building. 
+          p(class='paragraph-md') Being a freelancer is a rollercoaster of emotions. We built Slate to keep your freelance business building.
+          button(class='btn btn-fill' type='button') Get Started
   include ../components/footer/footer.pug
