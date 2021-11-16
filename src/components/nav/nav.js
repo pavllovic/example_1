@@ -7,6 +7,7 @@ function Nav(id) {
 Nav.prototype = {
   init: function() {
     this.btn.addEventListener('click', this);
+    this.menu.addEventListener('click', this);
   },
 
   openMenu: function() {

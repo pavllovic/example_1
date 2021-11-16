@@ -19,6 +19,10 @@
 @import './utility/visually-hidden.css';
 @import './utility/focus-visible.css';
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-width: 21rem;
   background-color: #fff;
@@ -27,7 +31,6 @@ body {
   font-weight: 450;
   text-align: center;
 }
-
 
 /* text */
 .heading {
@@ -139,6 +142,10 @@ body {
 
 
 /* block promo */
+.box-promo .subheading {
+  scroll-margin-top: 5rem;
+}
+
 .box-promo .paragraph-lg {
   max-width: 44rem;
 }
@@ -198,6 +205,10 @@ body {
       max(-55px, min(calc((50% - ((100vw - 500px) / (1282 - 500)) * (425 - 305) + 305px)), calc(50% - 425px))) 75%,
       max(calc(50% + 320px), min(calc(50% + ((100vw - 500px) / (1282 - 500)) * (641 - 320) + 320px), calc(50% + 1282px / 2))) calc(100% + 170px);
   }
+}
+
+.box-review .title {
+  scroll-margin-top: 5rem;
 }
 
 /* -------------------------------- */
