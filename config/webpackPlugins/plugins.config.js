@@ -7,8 +7,6 @@ const ESLintPlugin = require('eslint-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
 const BabelEsmPlugin = require('babel-esm-plugin');
 const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
-// const { BabelMultiTargetPlugin } = require('webpack-babel-multi-target-plugin');
-// const { WebpackNoModulePlugin } = require('webpack-nomodule-plugin');
 
 const isDev = process.env.NODE_ENV === 'development';
 
@@ -36,17 +34,12 @@ const babelEsmPlugin = new BabelEsmPlugin({
   chunkFilename: isDev? 'js/modern/es6.[name].js' :'js/modern/[contenthash].es6.[name].js',
 });
 
-// const htmlWebpackSkipAssetsPlugin = new HtmlWebpackSkipAssetsPlugin({
-//   excludeAssets: [/style\.js$/, /(about|article|blog)\.js$/]
-// });
-
 const htmlWebpackPlagin = new HtmlWebpackPlagin({
   title: 'site title',
   filename: 'index.html',
   template: './src/template/index.pug',
   chunks: ['index'],
   inject: 'body',
-  // scriptLoading: 'defer',
   minify: {
     collapseWhitespace: !isDev,
     collapseInlineTagWhitespace: !isDev,
@@ -74,44 +67,11 @@ const miniCssExtractPlugin = new MiniCssExtractPlugin({
   chunkFilename: isDev? 'css/[id].css' : 'css/[contenthash].[id].css'
 })
 
-// const babelMultiTargetPlugin = new BabelMultiTargetPlugin(
-//   {
-//     babel: {
-//       presetOptions: {
-//         useBuiltIns: 'usage',
-//         corejs: 3
-//       }
-//     },
-//     targets: {
-//       modern : {
-//         browsers: [
-//           'Edge >= 80',
-//           'Firefox >= 69',
-//           'Chrome >= 67',
-//           'Safari >= 11',
-//           'Opera >= 54'
-//         ],
-//         tagAssetsWithKey: false,
-//         esModule: true
-//       },
-//       legacy: {
-//         browsers: [
-//           'defaults'
-//         ],
-//         tagAssetsWithKey: true,
-//         key: 'legacy',
-//         noModule: true
-//       }
-//     }
-//   }
-// );
-
 module.exports = {
   miniCssExtractPlugin: miniCssExtractPlugin,
   htmlWebpackPlagin: htmlWebpackPlagin,
   stylelintPlugin: stylelintPlugin,
   eslintPlugin: eslintPlugin,
-  // babelMultiTargetPlugin: babelMultiTargetPlugin,
   cleanWebpackPlugin: cleanWebpackPlugin,
   compressionPlugin: compressionPlugin,
   babelEsmPlugin: babelEsmPlugin,

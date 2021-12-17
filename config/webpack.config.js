@@ -50,8 +50,6 @@ const makeConfig = () => {
         arr = arr.concat([
           plugins.babelEsmPlugin,
           plugins.scriptExtHtmlWebpackPlugin,
-          // plugins.ignoreEmitPlugin,
-          // plugins.htmlWebpackSkipAssetsPlugin,
         ]);
       }
 
